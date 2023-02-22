@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jimboidin.motoevents.Controller">
+   <children>
+      <ProgressIndicator fx:id="progressIndicator" layoutX="250.0" layoutY="180.0" />
+      <Label layoutX="37.0" layoutY="29.0" text="MotoEvents">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="76.0" text="View the MotoGP and WSBK Schedule for 2023!" />
+      <TableView fx:id="tableView" layoutX="37.0" layoutY="113.0" prefHeight="215.0" prefWidth="520.0" visible="false">
+         <columns>
+            <TableColumn fx:id="sportColumn" prefWidth="83.5999755859375" text="Sport" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="309.9999465942383" text="Description" />
+            <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="109.99996948242188" text="Date" />
+         </columns></TableView>
+      <Label layoutX="37.0" layoutY="353.0" text="jimboidin studios" />
+   </children>
+</AnchorPane>
